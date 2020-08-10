@@ -1,52 +1,33 @@
 <html>
     <head>
-       <script src="./data.js"></script>
        <link rel="stylesheet" href="./style.css"/>
     </head>
     <body>
-        <!--
-        <div class="modal-container">
-            <div class="modal">
-                <header>Enter Access Key</header>
-                <div class="modal-body">
-                    <input type="password"/>
-                    <button class="btn-css btn-small">Submit</button>
-                </div>
-            </div>
-        </div>
-        -->
-
-        <div class="maintenance-container">
-            <img src="./Maintenance.svg">
-            <div class="maintenance-text">
-                <p>Sorry, we're down for maintenance</p>
-                <p>Please check back soon.</p>
-            </div>
-            
-        </div>
         
-<!--
+        <header>
+            <h1>Utility</h1>
+            <div>Suban Khoja</div>
+        </header>
+        
         <div class="result-container hide">
             <div class="container">
                 <table id="ctl-table">
-                    
                 </table>
-
             </div>
             <div class="btn-container">
                 <button class="btn-css btn-large" onclick="reset()">Reset</button>
             </div>
         </div>  
+
         <div class="input-container ">
-            <textarea rows="25" cols="10" placeholder="Enter Qualify Response"></textarea>
+            <textarea rows="22" cols="10" placeholder="Enter Qualify Response"></textarea>
             <div class="btn-container">
                 <button class="btn-css btn-large" onclick="process()">Process</button>
             </div>
         </div>
-        -->
+        
     </body>
     <script>
-
 
         function switchToResult(){
             document.getElementsByClassName('input-container')[0].classList.add('hide');
@@ -151,12 +132,9 @@
                 tr_ele.appendChild(td_pc);
                 tr_ele.appendChild(td_ot);
                 tr_ele.appendChild(td_bt);
-    
+   
                 table_ele.appendChild(tr_ele);
             }
-
         }
-
-      
     </script>
 </html>
