@@ -2,6 +2,28 @@ body{
     margin: 0;
 }
 
+header{
+    display: flex;
+    background: #6a27e8;
+    justify-content: space-between;
+}
+
+header > h1 {
+    margin: 0.25em 0 0.25em 0.5em;
+    color: white;
+    font-family: consolas;
+}
+
+header > div {
+    margin: 0.5em 1.5em;
+    color: white;
+    font-family: consolas;
+    font-size: 1.2em;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
 div.maintenance-container{
     padding: 3em;
     margin: 3em;
