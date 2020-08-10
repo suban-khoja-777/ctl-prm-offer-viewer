@@ -6,44 +6,6 @@ body{
     margin: 0;
 }
 
-div.modal-container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #ebebeb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.modal{
-    width: 35%;
-    height: 20%;
-    border: 2px solid #c73a50;
-    border-radius: 5px;
-}
-
-div.modal > header{
-    background: #c73a50;
-    padding: 10px;
-    color: white;
-    font-family: consolas;
-}
-
-div.modal > div.modal-body{
-    justify-content: center;
-    padding: 20px;
-}
-
-div.modal-body > input{
-    padding: 5px 5px;
-    width: 80%;
-    border: 2px solid #c73a50;
-    border-radius: 3px;
-    color: #c73a50;
-    margin-right: 0.5em;
-}
-
 div.input-container{
     display: flex;
     flex-direction: column;
@@ -56,15 +18,13 @@ div.btn-container{
 
 .btn-css{
     background-color: #fff;
-    color : #c73a50;
-    
+    color : #6a27e8;
     border: none;
     outline: none;
-    
-    border: 2px solid #c73a50;
+    border: 2px solid #6a27e8;
     font-family: consolas;
-    
     cursor: pointer;
+    box-shadow :0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
 }
 
 .btn-large{
@@ -79,20 +39,22 @@ div.btn-container{
 }
 
 .btn-css:hover{
-    background-color: #c73a50;
+    background-color: #6a27e8;
     color: white;
 }
 
 textarea{
-    border: 2px solid #c73a50;
+    border: 2px solid #d6d6d6;
     border-radius: 6px;
     font-size: 15px;
-    background-color: #c73a50;
-    color: white;
+    background-color: #fff;
+    color: #6a27e8;
     font-family: consolas;
+    font-weight: 600;
     margin: 20px auto 5px auto;
     width: 60%;
     outline: none;
+    box-shadow:-15.7px 19.4px 84px 0 rgba(154, 170, 176, 0.28);
 }
 
 textarea::placeholder{
@@ -106,6 +68,7 @@ td {
     font-family: consolas;
     text-align: center;
 }
+
 table{
     border-collapse: separate;
     border-spacing: 30px 15px;
@@ -114,13 +77,16 @@ table{
     margin: auto;
     width: max-content;
 }
+
 div.container{
     text-align: center;
+    margin: 2em;
+    
 }
 
 div.maintenance-container{
-    padding: 3em;
-    margin: 3em;
+    padding: 2em;
+    margin: 2em;
     display: flex;
 }
 
@@ -129,16 +95,15 @@ div.maintenance-container > img {
     height: 23em;
 }
 
-div.maintenance-container > div > p:nth-child(1) {
-    color: #293d7c;
+div.maintenance-container > div > p {
+    color: #fff;
 }
 
 div.maintenance-container > div.maintenance-text{
     margin: auto;
-}
-
-div.maintenance-container > div > p:nth-child(2) {
-    color: #f24976;
+    background: #6a27e8;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 div.maintenance-container > div > p{
@@ -186,9 +151,6 @@ td.ot-pr-css{
     font-weight: 600;;
 }
 
-
 td.index-css{
     background-color: #545454;
 }
-
-
