@@ -223,5 +223,7 @@ td.ot-pr-css{
 }
 
 td.index-css{
-    background-color: #545454;
+    background-color: #f5f1da;
+    color: #3e474f;
+    font-weight: 600;
 }
