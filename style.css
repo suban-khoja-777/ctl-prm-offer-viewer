@@ -93,7 +93,7 @@ div.btn-container{
 
 .btn-css{
     background-color: #fff;
-    color : var(--primary-color);;
+    color : white;
     border: none;
     outline: none;
     border: 2px solid var(--primary-color);
@@ -115,8 +115,7 @@ div.btn-container{
 }
 
 .btn-css:hover{
-    
-    color: white;
+    transform: scale(1.1);
 }
 
 textarea{
