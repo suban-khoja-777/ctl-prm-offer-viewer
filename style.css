@@ -8,17 +8,34 @@ body{
 
 header{
     display: flex;
-    background: #6a27e8;
+    background: var(--primary-color);;
     justify-content: space-between;
 }
 
 header > h1 {
-    margin: 0.25em 0 0.25em 0.5em;
+    margin: 0 0.3em;
     color: white;
     font-family: consolas;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-header > div {
+header > h1 >span{
+    /*color:#F1892A;*/
+    color: var(--primary-color);;
+    font-weight: 900;
+    background-color: white;
+    padding: 0px 5px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+header > h1:first{
+    color: #ff4444 !important;
+}
+
+header > span {
     margin: 0.5em 1.5em;
     color: white;
     font-family: consolas;
@@ -28,32 +45,6 @@ header > div {
     border-radius: 5px;
 }
 
-div.input-container{
-    display: flex;
-    flex-direction: column;
-}
-
-div.btn-container{
-    text-align: center;
-    margin: 15px;
-}
-
-.btn-css{
-    background-color: #fff;
-    color : #6a27e8;
-    border: none;
-    outline: none;
-    border: 2px solid #6a27e8;
-    font-family: consolas;
-    cursor: pointer;
-    box-shadow :0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
-}
-
-.btn-large{
-    padding: 10px 20px;
-    font-size: 1.4em;
-    border-radius: 5px;
-}
 
 .btn-small{
     border-radius: 3px;
@@ -83,6 +74,61 @@ textarea::placeholder{
     color: white;
 }
 
+div.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+div.btn-container{
+    text-align: center;
+    margin: 15px;
+}
+
+.btn-css{
+    background-color: #fff;
+    color : var(--primary-color);;
+    border: none;
+    outline: none;
+    border: 2px solid var(--primary-color);;
+    font-family: consolas;
+    cursor: pointer;
+    box-shadow :0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+
+.btn-large{
+    padding: 10px 20px;
+    font-size: 1.4em;
+    border-radius: 5px;
+}
+
+.btn-small{
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.btn-css:hover{
+    background-color: var(--primary-color);;
+    color: white;
+}
+
+textarea{
+    border: 2px solid #d6d6d6;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    color: var(--primary-color);;
+    font-family: consolas;
+    font-weight: 600;
+    margin: 20px auto 5px auto;
+    width: 60%;
+    outline: none;
+    box-shadow:-15.7px 19.4px 84px 0 rgba(154, 170, 176, 0.28);
+}
+
+textarea::placeholder{
+    color: white;
+}
+
 td {
     padding: 5px;
     border-radius: 3px;
@@ -90,7 +136,6 @@ td {
     font-family: consolas;
     text-align: center;
 }
-
 table{
     border-collapse: separate;
     border-spacing: 30px 15px;
@@ -99,7 +144,6 @@ table{
     margin: auto;
     width: max-content;
 }
-
 div.container{
     text-align: center;
     margin: 2em;
@@ -110,11 +154,14 @@ div.maintenance-container{
     padding: 2em;
     margin: 2em;
     display: flex;
+
 }
 
-div.maintenance-container > img {
+div.maintenance-container > span {
     width: 23em;
     height: 23em;
+    background : var(--maintenance-svg);
+    
 }
 
 div.maintenance-container > div > p {
@@ -123,10 +170,11 @@ div.maintenance-container > div > p {
 
 div.maintenance-container > div.maintenance-text{
     margin: auto;
-    background: #6a27e8;
+    background: var(--primary-color);;
     border-radius: 5px;
     padding: 1em;
 }
+
 
 div.maintenance-container > div > p{
     font-size: 2em;
