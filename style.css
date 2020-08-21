@@ -4,6 +4,7 @@
 
 body{
     margin: 0;
+    background: #3e474f;
 }
 
 header{
@@ -140,7 +141,6 @@ td {
 table{
     border-collapse: separate;
     border-spacing: 30px 15px;
-    background-color: #ebebeb;
     display: block;
     margin: auto;
     width: max-content;
@@ -185,40 +185,40 @@ div.maintenance-container > div > p{
 }
 
 td.fm-b-css{
-    background-color: #19664c;
+    background-color: #ff9a76;
 }
 
 td.fm-i-css{
-    background-color: #2eb889;
+    background-color: #ff9a76;
 }
 
 td.fm-v-css{
-    background-color: #70dcb7;
+    background-color: #ff9a76;
 }
 
 td.pc-css{
-    background-color:#e03945;
+    background-color:#a2de96;
 }   
 
 td.bt-pr-css{
-    background-color:#771cca;
+    background-color:#598af1;
 }
 
 td.bt-ps-css{
     background-color: white;
-    color: #771cca;
-    border : 2px solid  #771cca;
+    color: #598af1;
+    border : 2px solid  #598af1;
     font-weight: 600;
 }
 
 td.ot-pd-css{
-    background-color:#862d67;
+    background-color:#32e0c4;
 }
 
 td.ot-pr-css{
     background-color: white;
-    color: #862d67;
-    border : 2px solid  #862d67;
+    color: #32e0c4;
+    border : 2px solid  #32e0c4;
     font-weight: 600;;
 }
 
