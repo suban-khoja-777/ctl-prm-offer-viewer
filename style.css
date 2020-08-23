@@ -4,12 +4,11 @@
 
 body{
     margin: 0;
-    background: #3e474f;
 }
 
 header{
     display: flex;
-    background: var(--primary-color);;
+    background: var(--primary-bg-color);
     justify-content: space-between;
 }
 
@@ -28,26 +27,16 @@ header > img {
     margin: 0 1em;
 }
 
-header > h1 >span{
-    /*color:#F1892A;*/
-    color: var(--primary-color);;
-    font-weight: 900;
-    background-color: white;
-    padding: 0px 5px;
-    margin: 0 3px;
-    border-radius: 5px;
-}
-
-header > h1:first{
-    color: #ff4444 !important;
-}
 
 header > span {
     margin: 0.5em 1.5em;
-    color: white;
+    color: var(--secondary-txt-color);
     font-family: consolas;
     font-size: 1.2em;
-    border: 1px solid white;
+    border: 1px solid ;
+    border-color: var(--secondary-bg-color);
+    background-color : var(--secondary-bg-color);
+    
     padding: 0.5em;
     border-radius: 5px;
 }
@@ -56,20 +45,6 @@ header > span {
 .btn-small{
     border-radius: 3px;
     padding: 5px 10px;
-}
-
-textarea{
-    border: 2px solid #d6d6d6;
-    border-radius: 6px;
-    font-size: 15px;
-    background-color: #fff;
-    color: #6a27e8;
-    font-family: consolas;
-    font-weight: 600;
-    margin: 20px auto 5px auto;
-    width: 60%;
-    outline: none;
-    box-shadow:-15.7px 19.4px 84px 0 rgba(154, 170, 176, 0.28);
 }
 
 textarea::placeholder{
@@ -91,8 +66,8 @@ div.btn-container{
     color : white;
     border: none;
     outline: none;
-    border: 2px solid var(--primary-color);
-    background-color: var(--primary-color);
+    border: 2px solid var(--primary-bg-color);
+    background-color: var(--primary-bg-color);
     font-family: consolas;
     cursor: pointer;
     box-shadow :0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
@@ -111,14 +86,18 @@ div.btn-container{
 
 .btn-css:hover{
     transform: scale(1.05);
+    background-color: var(--secondary-bg-color);
+    color:var(--primary-txt-color);
+    font-family:consolas;
+    border-color: var(--secondary-bg-color);
 }
 
 textarea{
-    border: 2px solid #d6d6d6;
-    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--primary-bg-color);
     font-size: 15px;
     background-color: #fff;
-    color: var(--primary-color);;
+    color: var(--primary-bg-color);
     font-family: consolas;
     font-weight: 600;
     margin: 20px auto 5px auto;
@@ -171,7 +150,7 @@ div.maintenance-container > div > p {
 
 div.maintenance-container > div.maintenance-text{
     margin: auto;
-    background: var(--primary-color);;
+    background: var(--primary-bg-color);
     border-radius: 5px;
     padding: 1em;
 }
@@ -185,45 +164,45 @@ div.maintenance-container > div > p{
 }
 
 td.fm-b-css{
-    background-color: #ff9a76;
+    background-color: var(--product-type-color);
 }
 
 td.fm-i-css{
-    background-color: #ff9a76;
+    background-color: var(--product-type-color);
 }
 
 td.fm-v-css{
-    background-color: #ff9a76;
+    background-color: var(--product-type-color);
 }
 
 td.pc-css{
-    background-color:#a2de96;
+    background-color: var(--offer-speed-color);
 }   
 
 td.bt-pr-css{
-    background-color:#598af1;
+    background-color: var(--offer-billing-type-color);
 }
 
 td.bt-ps-css{
     background-color: white;
-    color: #598af1;
-    border : 2px solid  #598af1;
+    color: var(--offer-billing-type-color);
+    border : 2px solid  var(--offer-billing-type-color);
     font-weight: 600;
 }
 
 td.ot-pd-css{
-    background-color:#32e0c4;
+    background-color: var(--offer-type-color);
 }
 
 td.ot-pr-css{
     background-color: white;
-    color: #32e0c4;
-    border : 2px solid  #32e0c4;
-    font-weight: 600;;
+    color: var(--offer-type-color);
+    border : 2px solid  var(--offer-type-color);
+    font-weight: 600;
 }
 
 td.index-css{
-    background-color: #f5f1da;
-    color: #3e474f;
+    background-color: #3e474f;
+    color: white;
     font-weight: 600;
 }
