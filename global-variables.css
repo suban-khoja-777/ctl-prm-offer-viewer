@@ -1,4 +1,13 @@
 * {
-    --primary-color:#ff4444;
+    --primary-bg-color:#6400e4;
+    --secondary-bg-color:#ffd500;
+    --primary--txt-color:#fff;
+    --secondary--txt-color:#212121;
     --maintenance-svg: url('./Maintenance.svg');
+
+    --product-type-color: #f55b24;
+    --offer-speed-color : #41c147;
+    --offer-type-color : #d81b60;
+    --offer-billing-type-color : #2161e8;
+
 }
